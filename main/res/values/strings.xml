@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AppSharing</string>
+    <string name="visa_credit_card_4123">1234 **** **** ****</string>
+    <string name="mohammed_ali">Mohammed Ali</string>
+    <string name="timeset1">4:30 p</string>
+    <string name="april_20_2019">March 24th 2020</string>
+    <string name="selected_date_and_time_ast_saudi_time">Selected Date and Time AST Saudi Time</string>
+    <string name="cost_in_gbp">Cost in GPB</string>
+    <string name="reason_for_performing_badal">Reason for Performing Badal</string>
+    <string name="s_o_mohammad_ibrahim">S/o Ibrahim</string>
+    <string name="mohammed_abdullah">Mohemmed Abdullah</string>
+    <string name="personal_details">Personal Detail</string>
+</resources>

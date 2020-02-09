@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:text="Share Now"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:layout_marginBottom="?actionBarSize"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_16dp"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:layout_marginRight="@dimen/dimen_16dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_goneMarginTop="@dimen/dimen_20dp">
+
+                <TextView
+                    android:id="@+id/badalReceiptPersonalInfoQuotes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/personal_details"
+                    android:textSize="@dimen/dimen_16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/badalReceiptPersonalInfoName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/badalReceiptPersonalInfoQuotes"
+                    android:layout_marginStart="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/dimen_30dp"
+                    android:text="@string/mohammed_abdullah"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:id="@+id/badalReceiptPersonalInfoFathersName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/badalReceiptPersonalInfoName"
+                    android:layout_marginStart="@dimen/dimen_16dp"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/dimen_30dp"
+                    android:text="@string/s_o_mohammad_ibrahim"
+                    android:textColor="@color/colorBlack" />
+
+
+                <TextView
+                    android:id="@+id/badalPerdonalConfirmDetailDivider"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_1dp"
+                    android:layout_below="@+id/badalReceiptPersonalInfoFathersName"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:background="@color/light_black" />
+
+                <TextView
+                    android:id="@+id/badalReceiptBadalReasonQuotes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/badalPerdonalConfirmDetailDivider"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:text="@string/reason_for_performing_badal"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/badalReceiptBadalReasonTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/badalReceiptBadalReasonQuotes"
+                    android:layout_marginStart="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/dimen_30dp"
+                    android:text="Physically not able, may not recover"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:id="@+id/badalConfirmDetailDivider"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_1dp"
+                    android:layout_below="@+id/badalReceiptBadalReasonTv"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:background="@color/light_black" />
+
+                <TextView
+                    android:id="@+id/recieptCostTitleQuotes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/badalConfirmDetailDivider"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:layout_toStartOf="@+id/recieptCostBadalAmountTv"
+                    android:text="@string/cost_in_gbp"
+                    android:textSize="@dimen/dimen_16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/recieptCostQuotes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/recieptCostTitleQuotes"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:layout_toStartOf="@+id/recieptCostBadalAmountTv"
+                    android:text="Offer price sown to performer \u00A3"
+                    android:textColor="@color/colorTextDark"
+                    android:textSize="@dimen/dimen_14sp" />
+
+                <TextView
+                    android:id="@+id/recieptCostBadalAmountTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/recieptCostTitleQuotes"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:paddingStart="@dimen/dimen_8dp"
+                    android:paddingEnd="@dimen/dimen_8dp"
+                    android:text=" 98"
+                    android:textColor="@color/colorTextDark"
+                    android:textSize="@dimen/dimen_14sp" />
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/costInfoConstrainLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/recieptCostQuotes"
+                    android:layout_marginTop="@dimen/dimen_5dp">
+
+
+                    <TextView
+                        android:id="@+id/recieptCostOfferPriceQuotes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="Platform Usage Charges \u00A3"
+                        android:textColor="@color/colorTextDark"
+                        app:layout_constraintEnd_toStartOf="@+id/recieptCostOfferPlatformChargeTv"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/recieptCostOfferPlatformChargeTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|end"
+                        android:paddingStart="@dimen/dimen_8dp"
+                        android:paddingEnd="@dimen/dimen_8dp"
+                        android:text=" 50"
+                        android:textColor="@color/colorTextDark"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <TextView
+                        android:id="@+id/badalpriceAmountDivider"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_1dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@color/light_black"
+                        app:layout_constraintTop_toBottomOf="@+id/recieptCostOfferPriceQuotes" />
+
+                    <TextView
+                        android:id="@+id/recieptCostUsageChargesQuotes"
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="@dimen/dimen_20dp"
+                        android:text="Total Cost of Badal"
+                        android:textColor="@color/colorTextDark"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/recieptCostOfferPriceQuotes" />
+
+                    <TextView
+                        android:id="@+id/recieptTotalPriceAmountTv"
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_20dp"
+                        android:gravity="center"
+                        android:paddingStart="@dimen/dimen_8dp"
+                        android:paddingEnd="@dimen/dimen_8dp"
+                        android:text="\u00A3 148"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/recieptCostOfferPriceQuotes" />
+
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <TextView
+                    android:id="@+id/badalConfirmCostDetailDivider"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_1dp"
+                    android:layout_below="@+id/costInfoConstrainLayout"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:background="@color/colorTextLow" />
+
+
+                <TextView
+                    android:id="@+id/badalReceiptDateTimeQuotes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/badalConfirmCostDetailDivider"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:text="@string/selected_date_and_time_ast_saudi_time"
+                    android:textSize="@dimen/dimen_16sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/badalReceiptDateTimeName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/badalReceiptDateTimeQuotes"
+                    android:layout_marginStart="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/dimen_30dp"
+                    android:text="@string/april_20_2019"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:id="@+id/badalReceiptDateTimeFathersName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/badalReceiptDateTimeName"
+                    android:layout_marginStart="@dimen/dimen_16dp"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/dimen_30dp"
+                    android:text="@string/timeset1"
+                    android:textColor="@color/colorBlack" />
+
+
+                <TextView
+                    android:id="@+id/badalReceiptPerformerDateTimeQuotes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/badalReceiptDateTimeFathersName"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:text="Choice of Performer, his date &amp; cost inGBP"
+                    android:textSize="@dimen/dimen_16sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+
+                <TextView
+                    android:id="@+id/badalReceiptPerformerName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/badalReceiptPerformerDateTimeQuotes"
+                    android:layout_marginStart="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/dimen_30dp"
+                    android:text="Performer Name"
+                    android:textColor="@color/colorBlack"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/badalReceiptPerformerCost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/badalReceiptPerformerDateTimeQuotes"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:layout_toStartOf="@+id/badalReceiptPerformerName"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/dimen_30dp"
+                    android:text="110.25*"
+                    android:textColor="@color/colorBlack"
+                    android:visibility="gone" />
+
+
+                <TextView
+                    android:id="@+id/badalReceiptPerformerDateTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/badalReceiptPerformerName"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:layout_toStartOf="@+id/badalReceiptPerformerName"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/dimen_30dp"
+                    android:text="1.30p, 04January 2020| 23 Shaban 1441"
+                    android:textColor="@color/colorBlack"
+                    android:visibility="gone" />
+
+
+                <TextView
+                    android:id="@+id/badalConfirmPaymentDivider"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_1dp"
+                    android:layout_below="@+id/badalReceiptPerformerDateTime"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:background="@color/light_black" />
+
+                <TextView
+                    android:id="@+id/badalReceiptBillingAddresQuotes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/badalConfirmPaymentDivider"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:text="Payments"
+                    android:textSize="@dimen/dimen_16sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/badalReceiptPaymentQuotes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/badalReceiptPaymentCardInfo"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:text="Billing Address"
+                    android:textSize="@dimen/dimen_16sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/badalReceiptPaymentAmountPaid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/badalReceiptBillingAddresQuotes"
+                    android:layout_marginStart="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/dimen_30dp"
+                    android:text="Total Amount Paid : GBP 148.00"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:id="@+id/badalReceiptPaymentProvider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/badalReceiptPaymentAmountPaid"
+                    android:layout_marginStart="@dimen/dimen_16dp"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/dimen_30dp"
+                    android:text="@string/mohammed_ali"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:id="@+id/badalReceiptPaymentCardInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/badalReceiptPaymentProvider"
+                    android:layout_marginStart="@dimen/dimen_16dp"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/dimen_30dp"
+                    android:text="@string/visa_credit_card_4123"
+                    android:textColor="@color/colorBlack" />
+
+
+                <TextView
+                    android:id="@+id/badalConfirmbillingAddressDivider"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_1dp"
+                    android:layout_below="@+id/badalReceiptPaymentCardInfo"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:background="@color/light_black" />
+
+
+                <TextView
+                    android:id="@+id/badalReceiptBillingAddressNameTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/badalReceiptPaymentQuotes"
+                    android:layout_marginStart="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/dimen_30dp"
+                    android:text="Mohammed Abbas"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:id="@+id/badalReceiptBillingAddressMobileNumTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/badalReceiptBillingAddressNameTv"
+                    android:layout_marginStart="@dimen/dimen_16dp"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/dimen_30dp"
+                    android:text="+918753454545"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:id="@+id/badalReceiptBillingAddressemailTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/badalReceiptBillingAddressMobileNumTv"
+                    android:layout_marginStart="@dimen/dimen_16dp"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/dimen_30dp"
+                    android:text="abbas@gmail.com"
+                    android:textColor="@color/colorBlack" />
+
+
+                <TextView
+                    android:id="@+id/badalConfirmPaymentAddressDivider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/badalReceiptPaymentCardInfo"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:layout_marginBottom="@dimen/dimen_16dp"
+                    android:background="@drawable/action_status_bg"
+                    android:gravity="center|start"
+                    android:padding="@dimen/dimen_16dp"
+                    android:text="Booking Successful. \nTrack your Badal getting scheduled."
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/dimen_14sp"
+                    android:visibility="gone" />
+
+
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
